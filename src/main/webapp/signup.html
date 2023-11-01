@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <Style>
+  body {
+		background-color: #2b4162;
+background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+
+		background-repeat: no-repeat;
+  		background-attachment: fixed;
+}
+    #aa{
+      width: 42%;
+      padding-top: 80px;
+      padding-left: 400px;
+    }
+  .form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 120px;
+  padding-right: 200px;
+  padding-bottom: 0.4em;
+  background-color: #171717;
+  border-radius: 25px;
+  transition: .4s ease-in-out;
+  }
+
+.form:hover {
+  transform: scale(1.05);
+  border: 1px solid white;
+}
+
+#heading {
+  text-align: center;
+  margin: 2em;
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+}
+
+.field {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 25px;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.input-icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: white;
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #d3d3d3;
+}
+
+.form .btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 1em;
+}
+
+.button1 {
+  padding: 0.5em;
+  padding-left: 1.1em;
+  padding-right: 1.1em;
+  border-radius: 5px;
+  margin-right: 0.5em;
+  border: none;
+  outline: none;
+  transition: .4s ease-in-out;
+  background-color: #252525;
+  color: white;
+  height: 48px;
+}
+
+.button1:hover {
+  background-color: rgb(72, 15, 15);
+  color: white;
+}
+
+.button2 {
+  padding: 0.5em;
+  padding-left: 2.3em;
+  padding-right: 2.3em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: .4s ease-in-out;
+  background-color: #252525;
+  color: white;
+}
+
+.button2:hover {
+  background-color: rgb(88, 21, 21);
+  color: white;
+}
+
+.button3 {
+  margin-bottom: 3em;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: .4s ease-in-out;
+  background-color: #252525;
+  color: white;
+}
+
+.button3:hover {
+  background-color: red;
+  color: white;
+}
+  </Style>
+</head>
+<body>
+  <div id="aa">
+  <form class="form" action="register" method="post">
+    <p id="heading">Sign-Up</p>
+    <div class="field">
+      <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"></svg>
+        <input autocomplete="off" placeholder="Username" class="input-field" type="text" name="name" required="required">
+      </div>  
+    <div class="field">
+    <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"></svg>
+      <input autocomplete="off" placeholder="email" class="input-field" type="text" name="email" required="required">
+    </div>
+    <div class="field">
+    <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"></svg>
+      <input placeholder="Password" class="input-field" type="password" name="password" required="required">
+    </div>
+    <div class="field">
+      <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"></svg>
+        <input autocomplete="off" placeholder="phone number" class="input-field" type="tel" name="phone" required="required">
+      </div>
+      <div class="field">
+      <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"></svg>
+        <input placeholder="Address" class="input-field" type="text" name="address" required="required">
+      </div>
+        <div class="field">
+        <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"></svg>
+          <input placeholder="Account number" class="input-field" type="number" name="accountNumber" required="required">
+        </div>
+        <div class="field">
+          <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"></svg>
+            <input autocomplete="off" placeholder="IFC number" class="input-field" type="text" name="IFCcode" required="required">
+          </div>
+        <div class="field">
+          <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"></svg>
+            <input autocomplete="off" placeholder="Branch" class="input-field" type="text" name="branchName" required="required">
+          </div>
+          <div class="field">
+          <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"></svg>
+            <input placeholder="Avilable Balance" class="input-field" type="number" name="avilableBalance" required="required">
+          </div>
+          
+    <div class="btn">
+    <input type="submit" value="Sign-Up" class="button1"> <br>
+      <!-- <h5 style="color: firebrick;">Alreay for user</h5>
+    <button class="button2"><a href="signup.html" style="color: aliceblue;">Sign-in</a></button> -->
+    <h4  style="color: firebrick;">For existing user &nbsp;<a href="login.html" style="color: aliceblue;">Sign-in</a></h4>
+    </div><br>
+  </div>
+</form>
+</body>
+</html>
